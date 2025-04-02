@@ -16,7 +16,7 @@ n_rate = 0.1
 k_intensity = 0.2
 
 # Load the data
-ref = Image.open('img/img_88.png').convert('L')
+ref = Image.open('img/test.png').convert('L')
 
 ref = torch.from_numpy(np.array(ref)).unsqueeze(0).unsqueeze(0).to(device).float() / 255.0
 ref = ref[:, :, :-1, :-1]
